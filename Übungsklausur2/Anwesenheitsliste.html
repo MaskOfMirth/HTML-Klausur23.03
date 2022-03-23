@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "date" content = "dd.mm.yyy">
+    <meta name = "author" content = "kekw">
+    <title>Anwesenheit HauptberuRiche Dozenten</title>
+    <script src="/logic.js"></script>
+    <style>
+        .td1{
+            background-color: green;
+            color: white;
+        }
+        .td2{
+            background-color: red;
+            color: white;
+        }
+        .td3{
+            background-color: red;
+            color: white;
+        }
+        .Parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .div1{grid-area: 1/1/2/5;}
+        .div2{grid-area: 1/6/1/6;}
+    </style>
+</head>
+<body>
+    <hr>
+    <header>
+        <img src = "Ba.png" alt="Logo">
+        <h1>Anwesenheit Mitarbeiter</h1>
+    </header>
+    <div class="Parent">
+    <div class="div1">
+        <table style="width: 1500px;">
+        <tr>
+            <td><button>zurück</button></td>
+            <td>23.03.2022</td>
+            <td><button>vor</button></td>
+        </tr>
+    </table>
+    <table style="width: 1300px;">
+        <tr>
+            <td><h2>Dozent</h2></td>
+            <td><h2>Montag</h2></td>
+            <td><h2>Dienstag</h2></td>
+            <td><h2>Mittwoch</h2></td>
+            <td><h2>Donnerstag</h2></td>
+            <td><h2>Freitag</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Herr Prof. Brunner</h2></td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td3" onclick="change(this)">Heimarbeit</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+        </tr>
+        <tr>
+            <td><h2>Frau Prof. Schneider</h2></td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td2" onclick="change(this)">Urlaub</td>
+            <td class="td2" onclick="change(this)">Urlaub</td>
+        </tr>
+        <tr>
+            <td><h2>Herr Prof. Siegmund</h2></td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+            <td class="td1" onclick="change(this)">Lehre/Büro</td>
+        </tr>
+    </table>
+    </div>
+    <div class="div2">
+    <table>
+        <tr>
+            <td><h5>Legende</h5></td>
+        </tr>
+        <tr>
+            <table>
+                <tr><td style="background-color: green; color: white;">Lehre/Büro</td></tr>
+                <tr><td style="background-color: red; color: white;">Heimarbeit</td></tr>
+                <tr><td style="background-color: red; color: white;">Uralub</td></tr>
+            </table>
+        </tr>
+    </table>
+    </div>
+    </div>
+
+    <footer>
+        <img src = "Sachsen.png" width="30px">
+        <a href = "https://www.ba-leipzig.de/">BA-Leiptzig Webseite</a>
+        <a href="https://www.ba-leipzig.de/impressum-1">BA-Leiptzig Impressum-1</a>
+        <a href="webmaster@ba-leiptzig.de">E-mail Ba-Leiptzig</a>
+    </footer>
+</body>
+</html>
